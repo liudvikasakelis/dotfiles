@@ -1,5 +1,7 @@
 (provide 'local-ess)
 
+(use-package ess)
+(require 'ess-r-mode)
 (defun R-remote (&optional remote-host session directory)
   "Connect to the remote-host's dtach session running R."
   (interactive (list
