@@ -1,4 +1,5 @@
 (provide 'local-shortcuts)
+
 (setq visible-bell nil)
 (bind-key* (kbd "C-<right>") 'next-buffer)
 (bind-key* (kbd "C-<left>") 'previous-buffer)
