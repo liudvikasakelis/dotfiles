@@ -9,8 +9,9 @@
 
 (setq python-shell-interpreter "ipython3"
       python-shell-interpreter-args
-      "-i --simple-prompt --InteractiveShell.display_page=True")
-
+      "-i --simple-prompt --InteractiveShell.display_page=True"
+      lsp-pylsp-plugins-flake8-enabled nil
+      lsp-pylsp-plugins-pydocstyle-enabled nil)
 
 ;; (add-hook 'python-mode-hook
 ;; 	  (lambda ()  

@@ -6,4 +6,5 @@
 (global-set-key (kbd "C-<tab>") 'other-window)
 (setq mouse-autoselect-window 't)
 (bind-key* (kbd "C-M-j") "<br>") ; lol 
+
 (bind-key* (kbd "C-x C-b") 'ibuffer)
