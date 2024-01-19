@@ -1,4 +1,10 @@
+# Currently experimenting with alternative solution from
+# https://dev.to/tallesl/change-caps-lock-to-ctrl-3c4
+# add XKBOPTIONS="ctrl:nocaps" to /etc/default/keyboard
+
 clear lock
 clear control
 keycode 66 = Control_L
 add control = Control_L Control_R
+
+
