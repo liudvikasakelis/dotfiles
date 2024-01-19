@@ -4,7 +4,6 @@
 (bind-key* (kbd "C-<right>") 'next-buffer)
 (bind-key* (kbd "C-<left>") 'previous-buffer)
 (global-set-key (kbd "C-<tab>") 'other-window)
-(ido-mode -1)
 (setq mouse-autoselect-window 't)
 (bind-key* (kbd "C-M-j") "<br>") ; lol 
 (bind-key* (kbd "C-x C-b") 'ibuffer)
