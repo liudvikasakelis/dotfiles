@@ -64,7 +64,7 @@ If `ess-language' is not \"S\", call `self-insert-command' with ARG."
 
 (defcustom ess-S-pipe "\\"
   "Which symbol inserts pipe")
-(defcustom ess-pipe-list (list " %>% ") "DOCSTRING")
+(defcustom ess-pipe-list (list " |> ") "What is the pipe")
                                
 (define-key ess-mode-map "\\" 'ess-insert-pipe)
 (define-key inferior-ess-mode-map "\\" 'ess-insert-pipe)
