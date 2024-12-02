@@ -7,9 +7,9 @@
 (add-hook 'python-mode-hook 'pyvenv-mode)
 (add-hook 'python-mode-hook 'elpy-mode)
 
-(setq python-shell-interpreter "ipython3"
-      python-shell-interpreter-args
-      "-i --simple-prompt --InteractiveShell.display_page=True"
+(setq ;; python-shell-interpreter "ipython3"
+      ;; python-shell-interpreter-args
+      ;; q"-i --simple-prompt --InteractiveShell.display_page=True"
       lsp-pylsp-plugins-flake8-enabled nil
       lsp-pylsp-plugins-pydocstyle-enabled nil)
 
