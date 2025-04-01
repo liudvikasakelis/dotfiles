@@ -1,0 +1,12 @@
+HISTSIZE=10000
+HISTFILESIZE=1000000
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+for f in $HOME/.bash_functions/*.sh;
+do
+    source $f
+done
+
+## Add below line to the end of .bashrc
+## . "$HOME/.bash_things"
