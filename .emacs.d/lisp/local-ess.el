@@ -38,7 +38,7 @@
 (define-key inferior-ess-mode-map "_" nil)
 (define-key inferior-ess-mode-map ";" 'ess-insert-assign)
 
-(setq ess-eval-visibly 'nowait) 
+(setq ess-eval-visibly 'nowait)
 (setq ess-tab-complete-in-script t)
 
 
@@ -58,14 +58,13 @@ If `ess-language' is not \"S\", call `self-insert-command' with ARG."
                (if (and char (numberp event))
                    (replace-match char t t)
                  (replace-match "")))
-              (t (delete-horizontal-space) 
+              (t (delete-horizontal-space)
                  (insert pipe))))
     (funcall #'self-insert-command arg)))
 
-(defcustom ess-S-pipe "\\"
-  "Which symbol inserts pipe")
-(defcustom ess-pipe-list (list " %>% ") "DOCSTRING")
-                               
+(defcustom ess-S-pipe "\\" "Which symbol inserts pipe")
+(defcustom ess-pipe-list (list " |> " " %>% ") "Symbols inserted as R pipe")
+
 (define-key ess-mode-map "\\" 'ess-insert-pipe)
 (define-key inferior-ess-mode-map "\\" 'ess-insert-pipe)
 
