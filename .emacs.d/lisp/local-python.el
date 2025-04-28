@@ -2,12 +2,16 @@
 
 (use-package elpy
   :ensure t)
-;; (use-package lsp
-;;   :ensure t)
+(use-package lsp-mode
+  :ensure t)
 
 (elpy-enable)
 
-(require 'lsp-mode)
+;; elpy setup will fail unless python3-virtualenv is installed;
+;; rerun setup with command below
+;; (elpy-rpc-reinstall-virtualenv)
+
+;; (require 'lsp-mode)
 ;; (add-hook 'python-mode-hook #'lsp)
 (add-hook 'python-mode-hook 'pyvenv-mode)
 (add-hook 'python-mode-hook 'elpy-mode)

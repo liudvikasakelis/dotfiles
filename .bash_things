@@ -8,5 +8,9 @@ do
     source $f
 done
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
 ## Add below line to the end of .bashrc
 ## . "$HOME/.bash_things"
