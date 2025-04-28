@@ -26,7 +26,7 @@
       lsp-pylsp-plugins-pydocstyle-enabled nil)
 
 ;; (add-hook 'python-mode-hook
-;; 	  (lambda ()  
+;; 	  (lambda ()
 ;; 	    (setq-local company-backends
 ;; 			'((company- company-ispell :separate)
 ;; 			  company-files))))
